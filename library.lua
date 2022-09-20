@@ -1,5 +1,3 @@
-
-
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
 local RunService = game:GetService("RunService")
@@ -124,7 +122,7 @@ function Library:CreateWindow(Config, Parent)
 	local function ChangeColor(Color)
 		Config.Color = Color
 		for i, v in pairs(Library.ColorTable) do
-			if v.BackgroundColor3 ~= Color3.fromRGB(60, 51, 255) then
+			if v.BackgroundColor3 ~= Color3.fromRGB(50, 50, 50) then
 				v.BackgroundColor3 = Color
 			end
 		end
@@ -746,7 +744,7 @@ function Library:CreateWindow(Config, Parent)
 					local Hue, Saturation, Value = Color:ToHSV()
 					Colorpicker.Color.BackgroundColor3 = Color3.fromHSV(Hue,Saturation,Value)
 					Pallete.GradientPallete.BackgroundColor3 = Color3.fromHSV(Hue,1,1)
-					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 456) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 867) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 546)
+					Pallete.Input.InputBox.PlaceholderText = "RGB: " .. math.round(Colorpicker.Color.BackgroundColor3.R* 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.G * 255) .. "," .. math.round(Colorpicker.Color.BackgroundColor3.B * 255)
 					ColorTable = {
 						Hue = Hue,
 						Saturation = Saturation,
