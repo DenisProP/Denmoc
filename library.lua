@@ -1,29 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Denmoc 
-Denmoc
-/
-Denmoc
-Public
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-Denmoc/library.lua
-@Denmoc
-Denmoc Create library.lua
-Latest commit abb2768 28 minutes ago
- History
- 1 contributor
-787 lines (695 sloc)  25.5 KB
+
 
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
@@ -69,7 +44,7 @@ end
 
 function Library:CreateWindow(Config, Parent)
 	local WindowInit = {}
-	local Folder = game:GetObjects("rbxassetid://7141683860")[1]
+	local Folder = game:GetObjects("rbxassetid://7141563860")[1]
 	local Screen = Folder.Bracket:Clone()
 	local Main = Screen.Main
 	local Holder = Main.Holder
