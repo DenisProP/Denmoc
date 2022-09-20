@@ -16,7 +16,6 @@
                                                                                               
     You can suggest everything in discord server
     https://discord.gg/9vG8UJXuNf
-
                                                                     
 ]]
 
@@ -148,7 +147,6 @@ local xlp = {
     ['afunc'] = function(f)
         --[[
             f = function
-
             function functiontest()
                 task.wait(3) -- you can do task.wait(), it will be async
                 print("test")
@@ -220,7 +218,7 @@ local xlp = {
         return part
     end,
     ['generaterandomstring'] = function(a)
-        local let = ('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'):split('')
+        local let = ('ESYYWC7lZ-4PIHw4sFyPv3-WmQ9nUKZyFPvKCC12Z_CJGNYKIW8Z9VIUuWKlZH6LaaAa'):split('')
         local string = '' 
         for i = 1, a do 
             string = string..let[math.random(1, #let)]
