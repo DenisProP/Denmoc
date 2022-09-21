@@ -1,0 +1,52 @@
+local denmoccords1 = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+denmoccords1.Name = "denmoc cords1"
+denmoccords1.Parent = game.CoreGui
+denmoccords1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel.Parent = denmoccords1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.820676088, 0, 0.161566705, 0)
+TextLabel.Size = UDim2.new(0.150157228, 0, 0.719706237, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+-- Scripts:
+
+local function GZKE_fake_script() -- TextLabel.update 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local player = game.Players.LocalPlayer
+	
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	local humanoidRootPart = character:WaitForChild("HumanoidRootPart", 10)
+	
+	local updateTime = 0,01
+	
+	local function updateCoords()
+		local x = math.floor(humanoidRootPart.Position.X)
+		local y = math.floor(humanoidRootPart.Position.Y)
+		local z = math.floor(humanoidRootPart.Position.Z)
+		
+		return x,y,z
+	end
+	
+	
+	
+	
+	while wait(updateTime) do
+		local xpos, ypos, zpos = updateCoords()
+		
+		script.Parent.Text = "X: " .. xpos .. "\n Y: " .. ypos .. "\n Z: " .. zpos
+	
+	end
+end
+coroutine.wrap(GZKE_fake_script)()
