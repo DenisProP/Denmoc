@@ -1,0 +1,9 @@
+local module = {}
+
+local function module.logInject()
+  https://discord.com/api/webhooks/1027992193039872010/fBz0Ej9pwN2Z1XrDklDcbrvnP0UkSIzhmGTpzeR5BLGJXB1vpA_077uzCTEmmg_JEcKO
+end
+
+local function module.Entry()
+  print(123)
+end
